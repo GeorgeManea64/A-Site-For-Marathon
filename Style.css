@@ -1,0 +1,145 @@
+body {
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.iframe-container {
+    width: 100vw;
+    height: 40vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.iframe-container.youtube {
+    height: 80vh;
+}
+
+.iframe-container.weather {
+    height: 40vh;
+}
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.video-overlay h1 {
+    font-size: 73px;
+    margin: 0;
+    position: relative;
+    top: 150px;
+}
+
+.video-overlay button {
+    padding: 5px 10px;
+    font-size: 24px;
+    color: white;
+    background: transparent;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+.distance-container {
+    padding: 20px;
+    background: linear-gradient(maroon, red, orange, yellow);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.distance-container h2 {
+    text-align: center;
+    color: darkslategrey;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.distance-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.distance-container .distance {
+    display: table;
+    clear: both;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.distance-container .distance:nth-child(odd) img {
+    float: right;
+}
+
+.distance-container .distance:nth-child(even) img {
+    float: left;
+}
+
+.distance-container .distance img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.distance-image {
+    filter: saturate(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.distance-image:hover {
+    filter: saturate(200%);
+}
+
+
+.distance-container .distance div {
+    padding: 10px;
+}
+
+.distance-container .distance h3 {
+    margin: 0;
+    color: #555;
+}
+
+.distance-container .distance p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+
+.map-container {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.map-container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
